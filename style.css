@@ -1,0 +1,119 @@
+body {
+  background: linear-gradient(-20deg, #ff2846 0%, #6944ff 100%);
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+.story {
+  width: 100%;
+}
+.mars {
+  position: absolute;
+  width: 687px;
+  height: 687px;
+  left: 986px;
+  top: 171px;
+  animation: mars 45.5s ease infinite;
+}
+
+.astronaut {
+  position: absolute;
+  width: 144px;
+  height: 144px;
+  left: 830px;
+  top: 243px;
+  animation: astronaut 9.5s ease infinite;
+}
+.rocket {
+  position: absolute;
+  width: 197px;
+  height: 197px;
+  left: 372px;
+  top: 290px;
+  animation: rocket 30.5s ease infinite;
+  animation-direction: normal;
+}
+.earth {
+  position: absolute;
+  width: 463px;
+  height: 463px;
+  left: -65px;
+  top: 420px;
+  animation: worldwide 30.5s ease infinite;
+}
+.galaxy {
+  position: absolute;
+  width: 290px;
+  height: 239px;
+  left: 145px;
+  top: -33px;
+  animation-name: galaxy 35.5s ease infinite;
+}
+.sparkles {
+  position: absolute;
+  width: 66.52px;
+  height: 66.52px;
+  left: 362px;
+  z-index: 1;
+  animation: spark 9.5s ease infinite;
+}
+.asteroid{
+  position: absolute;
+  width: 144px;
+  height: 144px;
+  left: 440px;
+  animation: asteroid 30.5s ease infinite;
+  animation-direction: normal;
+}
+@keyframes rocket {
+  0% {
+    transform: translate(-50%, 100%);
+  }
+  100% {
+  }
+}
+@keyframes worldwide {
+  0% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes astronaut {
+  0% {
+    transform: translate(-50%, 100%);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spark {
+  0% {
+    transform: translate(-50%, 90%);
+  }
+  100% {
+    opacity: 0.07;
+  }
+}
+@keyframes mars {
+  0% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes asteroid {
+  0% {
+    transform: translate(100%, 50%);
+  }
+  100% {
+ 
+  }
+}
+@media screen and (max-width: 768px) {
+  .story {
+    width: 100px;
+  }
+}
